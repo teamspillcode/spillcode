@@ -270,7 +270,7 @@
       <section class="testimonials">
         <h2 class="works-heading">Testimonials</h2>
         <div class="testimonial-carousel">
-          <div class="flex-box testimonial-card">
+          <div class="flex-box testimonial-card" id="testimonial-card">
             <div class="testimonial-text-box">
               <p class="testimonial-text">
                 <span>"</span> <br />
@@ -287,7 +287,7 @@
             </div>
           </div>
 
-          <div class="flex-box testimonial-card">
+          <div class="flex-box testimonial-card" id="testimonial-card">
             <div class="testimonial-text-box">
               <p class="testimonial-text">
                 <span>"</span> <br />
@@ -304,7 +304,7 @@
             </div>
           </div>
 
-          <div class="flex-box testimonial-card">
+          <div class="flex-box testimonial-card" id="testimonial-card">
             <div class="testimonial-text-box">
               <p class="testimonial-text">
                 <span>"</span> <br />
@@ -325,7 +325,7 @@
             </div>
           </div>
 
-          <div class="flex-box testimonial-card">
+          <div class="flex-box testimonial-card" id="testimonial-card">
             <div class="testimonial-text-box">
               <p class="testimonial-text">
                 <span>"</span> <br />
@@ -343,6 +343,82 @@
           </div>
         </div>
       </section>
+      <!-- THE NEXT SECTION ONLY DISPLAY FOR MOBILE. I HAD TO SEPERATE IT BECAUSE OF THE ARANGEMENT OF
+        THE FLEX CARDS SO THAT I CAN REARRANGE THE POSITION OF THE IMAGE, BY SO DOING, THE IMAGE COMES
+        ON TOP IN MOBILE VIEW INSTEAD OF BELOW THE TEXT
+      -->
+      <section class="mobile-testimonials">
+        <h2 class="works-heading">Testimonials</h2>
+        <div class="testimonial-carousel">
+
+          <div class="testimonial-card" id="mobile-testimonial-card">
+            <div class="mobile-testimonial-img-box">
+              <img src="images/celebrity.jpg" alt="" />
+            </div>
+            <div class="testimonial-text-box">
+              <p class="mobile-testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </p>
+              <p class="mobile-testimonial-about">Brixford Jones</p>
+              <p class="mobile-testimonial-about">Founder of Predator Games</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="mobile-testimonial-card">
+            <div class="mobile-testimonial-img-box">
+              <img src="images/painting.jpg" alt="" />
+            </div>
+            <div class="testimonial-text-box">
+              <p class="mobile-testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </p>
+              <p class="mobile-testimonial-about">Brixford Jones</p>
+              <p class="mobile-testimonial-about">Founder of Predator Games</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="mobile-testimonial-card">
+            <div class="mobile-testimonial-img-box">
+              <img src="images/woman-659350_1920.jpg" alt="" />
+            </div>
+            <div class="testimonial-text-box">
+              <p class="mobile-testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </p>
+              <p class="mobile-testimonial-about">Brixford Jones</p>
+              <p class="mobile-testimonial-about">Founder of Predator Games</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="mobile-testimonial-card">
+            <div class="mobile-testimonial-img-box">
+              <img src="images/smirk.jpg" alt="" />
+            </div>
+            <div class="testimonial-text-box">
+              <p class="mobile-testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </p>
+              <p class="mobile-testimonial-about">Brixford Jones</p>
+              <p class="mobile-testimonial-about">Founder of Predator Games</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- THIS MARKS THE END OF THE MOBILE TESTIMONIAL DISPLAY -->
+
+
       <section class="email-subscription-section">
         <!-- <h2 class="works-heading">Tips</h2> -->
         <img src="images/email.png" class="email-subscription-image" alt="" />
@@ -363,12 +439,9 @@
         </div>
         <div class="profile-body-container">
           <p class="profile-text">
-            I give examples and tips on how to influence your brand, establish
-            your online personality, and keep memorable events alive with
-            photography for free. Subscribe to my emaiil newsletter! I give
-            examples and tips on how to influence your brand, establish your
-            online personality, and keep memorable events alive with photography
-            for free. Subscribe to my emaiil newsletter!
+            People trust people who have shown over time that they
+            are awesome at what they do. Allow me to add you to my host
+            of over satisfied clients. Let's make magic!
           </p>
           <button class="profile-action-btn">
             Get in touch
