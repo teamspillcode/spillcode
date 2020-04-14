@@ -420,9 +420,28 @@ nav ul li a {
   width: 80%;
   padding: 3%;
 }
-#contact-whatsapp-button {
-  background-color: green;
+.contact-btns {
+  color: var(--main-white);
+  font-size: 17px;
+  height: 70px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  display: block;
 }
+.contact-btns i{
+  font-size: 30px;
+  position: absolute;
+  margin-left: -10%;
+}
+#facebook-contact-button{
+  background-color: #3b5998;
+}
+#whatsapp-contact-button{
+  background-color: #25D366;
+}
+
 #contact-whatsapp-button:hover {
   background-color: var(--main-white);
   color: green;
@@ -481,6 +500,7 @@ footer {
 .copyright span {
   color: var(--main-blue);
 }
+
 @media screen and (max-width: 400px) {
   body {
     background-color: black;
@@ -601,5 +621,11 @@ footer {
     height: 50px;
     border: none;
     background-color: var(--main-white);
+  }
+  .footer-nav{
+    margin-left: -20%;
+  }
+  .footer-social-icons{
+    margin-left: -22%;
   }
 }
