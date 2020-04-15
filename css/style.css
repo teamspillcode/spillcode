@@ -523,7 +523,8 @@ footer {
     width: 100%;
   }
   .contact-nav-link {
-    margin-top: 10px;
+    margin-top: 25px;
+    transform: translateX(-160%);
   }
   nav {
     height: 12vh;
