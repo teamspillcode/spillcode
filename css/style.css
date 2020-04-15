@@ -333,6 +333,12 @@ nav ul li a {
   border: none;
   border-radius: 30px;
   background-color: var(--main-white);
+  font-size: 25px;
+  text-align: right;
+}
+.email-form button:hover i{
+  cursor: pointer;
+  color: var(--main-blue);
 }
 .profile-section {
   padding: 10%;
