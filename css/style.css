@@ -525,6 +525,8 @@ footer {
   .contact-nav-link {
     margin-top: 25px;
     transform: translateX(-160%);
+    -webkit-transform: translateX(-160%);
+    -moz-transform: translateX(-160%);
   }
   nav {
     height: 12vh;
