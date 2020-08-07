@@ -1,7 +1,7 @@
 :root {
-  --main-blue: rgb(0, 67, 138);
-  --main-blue-light: rgba(0, 67, 138, 0.4);
-  --main-blue-lighter: rgba(0, 67, 138, 0.2);
+  --main-blue: #ff6501;
+  --main-blue-light: rgba(248, 79, 0, 0.2);
+  --main-blue-lighter: rgba(248, 79, 0, 0.1);
   --main-white: #ffffff;
   --main-dark: #000000;
   --sub-dark: #0f0f0f;
@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: var(--main-dark);
+  overflow-x: hidden;
 }
 
 nav {
@@ -70,8 +71,19 @@ nav ul li a {
   width: 65vw;
   content: "";
   background-color: var(--main-blue);
+  overflow: hidden;
 }
 
+.backdrop {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 150px !important;
+  margin-left: -20%;
+  color: rgba(255, 255, 255, 0.2) !important;
+  transform: rotate(5deg);
+  width: 100vw;
+  overflow: hidden;
+}
 .grid-box {
   display: flex;
   position: absolute;
@@ -87,6 +99,7 @@ nav ul li a {
   margin-left: 10%;
 }
 .grid-item-1-inner-box {
+  overflow: hidden;
   width: 70%;
   margin-top: 15%;
 }
@@ -96,10 +109,9 @@ nav ul li a {
   color: var(--main-white);
 }
 .grid-item-1-inner-box p {
-  color: rgb(211, 211, 211);
+  color: rgb(236, 236, 236);
   font-size: 12px;
   line-height: 200%;
-  font-weight: lighter;
   margin-top: -8%;
 }
 .get-started-btn {
@@ -107,12 +119,26 @@ nav ul li a {
   padding: 5%;
   background-color: transparent;
   border: 1px solid var(--main-white);
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 13%;
   padding-right: 13%;
   border-radius: 4px;
   color: var(--main-white);
   margin-top: 7%;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+.get-started-btn:hover {
+  animation: pop 0.3s;
+}
+@keyframes pop {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 .grid-item-2 img {
   width: 80%;
@@ -127,7 +153,7 @@ nav ul li a {
 .rest-of-body {
   color: var(--main-white);
   padding: 10%;
-  padding-top: 3%;
+  padding-top: 7%;
 }
 .services-box {
 }
@@ -146,7 +172,7 @@ nav ul li a {
   margin-left: 5%;
   margin-bottom: 4%;
   background-color: white;
-  height: 330px;
+  height: 345px;
   -webkit-box-shadow: 1px 3px 35px var(--main-blue-lighter);
   -moz-box-shadow: 1px 3px 35px var(--main-blue-lighter);
   box-shadow: 1px 2px 35px var(--main-blue-light);
@@ -186,7 +212,12 @@ nav ul li a {
   padding-left: 5%;
   margin-top: 8%;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.card-button:hover {
+  animation: pop 0.3s;
 }
 
 .flex-box {
@@ -196,25 +227,28 @@ nav ul li a {
 .responsive-img {
   width: 100%;
 }
-
+.works {
+  margin-top: 10%;
+}
 .works-heading {
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 5%;
 }
 .first-img-flex {
-  width: 25%;
+  width: 100%;
 }
 .second-img-flex {
-  width: 35%;
+  width: 100%;
 }
 .third-img-flex {
-  width: 50%;
+  width: 100%;
 }
 .fourth-img-flex {
-  width: 65%;
+  width: 100%;
 }
 .fifth-img-flex {
-  width: 80%;
+  width: 100%;
 }
 .flex-items {
   margin-left: 5px;
@@ -336,12 +370,12 @@ nav ul li a {
   font-size: 25px;
   text-align: right;
 }
-.email-form button:hover i{
+.email-form button:hover i {
   cursor: pointer;
   color: var(--main-blue);
 }
 .profile-section {
-  padding: 10%;
+  padding: 2%;
   padding-top: 0;
   margin-top: 10%;
   display: flex;
@@ -350,21 +384,29 @@ nav ul li a {
   flex: 1;
 }
 .profile-img-container img {
-  /* width: 0%; */
+  width: 100%;
 }
 .profile-body-container {
   flex: 1;
+  padding-left: 2%;
+}
+.profile-body-container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .profile-text {
   font-weight: lighter;
 }
 .profile-action-btn {
-  padding: 5%;
+  padding: 3%;
   text-transform: uppercase;
   border: none;
   background-color: var(--main-blue);
   color: var(--main-white);
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 60%;
   transition: 0.3s all;
 }
 .profile-action-btn:hover {
@@ -426,31 +468,41 @@ nav ul li a {
   width: 80%;
   padding: 3%;
 }
+.contact-buttons-container {
+  margin-top: 10%;
+}
+.contact-heading {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .contact-btns {
   color: var(--main-white);
   font-size: 17px;
-  height: 70px;
-  width: 100%;
+  height: 50px;
+  width: 40%;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-bottom: 5%;
   display: block;
+  text-align: left;
+  padding-left: 5%;
+  cursor: pointer;
 }
-.contact-btns i{
+.contact-btns i {
   font-size: 30px;
   position: absolute;
   margin-left: -10%;
 }
-#facebook-contact-button{
-  background-color: #3b5998;
-}
-#whatsapp-contact-button{
-  background-color: #25D366;
+#whatsapp-contact-button {
+  background-color: #25d366;
+  transition: all 0.1s;
 }
 
-#contact-whatsapp-button:hover {
+#whatsapp-contact-button:hover {
   background-color: var(--main-white);
   color: green;
+  animation: pop 0.3s;
 }
 footer {
   background-color: var(--sub-dark);
@@ -523,7 +575,9 @@ footer {
     width: 100%;
   }
   .contact-nav-link {
-    margin-top: 30px;
+    position: absolute;
+    right: -40%;
+    margin-top: 15px;
     transform: translateX(-160%);
     -webkit-transform: translateX(-160%);
     -moz-transform: translateX(-160%);
@@ -537,7 +591,12 @@ footer {
     padding: 20px;
   }
   .first-img-flex {
-    width: 40%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .first-img-flex a {
+    display: block;
+    margin-bottom: 5%;
   }
   .second-img-flex {
     width: 55%;
@@ -550,6 +609,12 @@ footer {
   }
   .fifth-img-flex {
     width: 100%;
+  }
+  .rest-of-body {
+    margin-top: 80%;
+  }
+  #projects-section {
+    display: block !important;
   }
   #mobile-testimonial-card {
     height: 400px;
@@ -631,10 +696,17 @@ footer {
     border: none;
     background-color: var(--main-white);
   }
-  .footer-nav{
+  .contact-btns {
+    width: 90%;
+    padding-left: 15%;
+  }
+  .contact-btns i {
+    margin-top: -1%;
+  }
+  .footer-nav {
     margin-left: -20%;
   }
-  .footer-social-icons{
+  .footer-social-icons {
     margin-left: -22%;
   }
 }

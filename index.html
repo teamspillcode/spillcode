@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucid Photography</title>
+    <title>Spillcode - a software development team</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <script src="js/lightbox-plus-jquery.min.js"></script>
@@ -20,20 +20,27 @@
       src="https://kit.fontawesome.com/b8cb366812.js"
       crossorigin="anonymous"
     ></script>
-    <script async="async" src="https://static.mobilemonkey.com/js/2293346120746646.js"></script>
+    <script
+      async="async"
+      src="https://static.mobilemonkey.com/js/2293346120746646.js"
+    ></script>
   </head>
   <body>
     <article class="container">
       <nav>
         <ul>
           <span class="logo">
-            <li>Lucid</li>
+            <li>Spillcode</li>
           </span>
           <span class="nav-left-links">
             <li><a href="" id="home-nav-item">Home</a></li>
             <li><a href="#works">Work</a></li>
-            <li class="services-nav-item"><a href="#services-box">Services</a></li>
-            <li class="contact-nav-link"><a href="#contact-me-beginning">Contact</a></li>
+            <li class="services-nav-item">
+              <a href="#services-heading">Services</a>
+            </li>
+            <li class="contact-nav-link">
+              <a href="#contact-buttons-container">Contact</a>
+            </li>
           </span>
         </ul>
       </nav>
@@ -41,59 +48,80 @@
         <div class="grid-box">
           <div class="grid-item-1">
             <div class="grid-item-1-inner-box">
+              <p class="backdrop">SpillCode</p>
               <h1>
-                Photography is in our <br />
-                blood.
+                Expand your business <br />
+                online.
               </h1>
               <p>
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries.
+                You want more reach, leads, and more business profit. We can
+                give you just that. <br />
+                From ecommerce, portfolios, work tools, etc. Let's help you
+                build it.
               </p>
 
-              <button class="get-started-btn">get started</button>
+              <a href="#services-heading">
+                <button class="get-started-btn">get started</button>
+              </a>
             </div>
           </div>
           <div class="grid-item-2">
-            <img src="studio.jpg" alt="" class="grid-item-2-img" />
+            <img
+              src="/images/Website banner.png"
+              alt=""
+              class="grid-item-2-img"
+            />
           </div>
         </div>
       </section>
     </article>
     <article class="rest-of-body">
       <div class="services-box" id="services-box">
-        <h2 class="services-heading">Services</h2>
+        <h2 class="services-heading" id="services-heading">Services</h2>
         <div class="services-grid">
           <div class="grid-cards grid-box-1">
             <img src="images/focus-concept.jpg" class="cards-img" alt="" />
-            <h4 class="card-heading">Card Heading</h4>
+            <h4 class="card-heading">Web Development</h4>
             <div class="card-body">
               <p class="card-body-text">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries.
+                Small businesses look big with proper branding and having a
+                website. Let's help you add the spice to your business.
               </p>
-              <button class="card-button">Reach me</button>
+              <a
+                href="https://wa.me/2347069460208?text=Hello,%20I%20arrived%20from%20your%20website,%20here's%20the%20kind%20of%20website%20I%20need:"
+              >
+                <button class="card-button">Reach me</button>
+              </a>
             </div>
           </div>
           <div class="grid-cards grid-box-2">
             <img src="images/focus-concept.jpg" class="cards-img" alt="" />
-            <h4 class="card-heading">Card Heading</h4>
+            <h4 class="card-heading">Mobile Development</h4>
             <div class="card-body">
               <p class="card-body-text">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries.
+                Want to keep your customers by having them on download your app
+                on their mobile phones? We'll make this come thrue for you
               </p>
-              <button class="card-button">Reach me</button>
+              <a
+                href="https://wa.me/2347069460208?text=Hello,%20I%20arrived%20from%20your%20website,%20here's%20the%20kind%20of%20mobile%20app%20I%20need:"
+              >
+                <button class="card-button">Reach me</button>
+              </a>
             </div>
           </div>
           <div class="grid-cards grid-box-3">
             <img src="images/focus-concept.jpg" class="cards-img" alt="" />
-            <h4 class="card-heading">Card Heading</h4>
+            <h4 class="card-heading">UI/UX Designs</h4>
             <div class="card-body">
               <p class="card-body-text">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries.
+                Designs would play a huge role to how a customer or prospect
+                would perceive your business. Allow us to over satisfy you.
               </p>
-              <button class="card-button">Reach me</button>
+              <a
+                href="https://wa.me/2347069460208?text=Hello,%20I%20arrived%20from%20your%20website,%20here's%20the%20kind%20of%20ui/ux%20design%20I%20need:"
+              >
+                <button class="card-button">Reach me</button>
+              </a>
             </div>
           </div>
         </div>
@@ -102,166 +130,70 @@
       <div class="works" id="works">
         <h2 class="works-heading">Fire Works</h2>
         <div class="entire-work-img-container">
-          <div class="flex-box first-img-flex">
+          <div class="flex-box first-img-flex" id="projects-section">
             <a
-              href="https://www.youngparents.com.sg/wp-content/uploads/2017/10/7-things-you-should-know-about-Baby%E2%80%99s-ear-infection_1-1-e1580355290445-640x420.jpg"
+              href="https://res.cloudinary.com/dcft8yhab/image/upload/v1596766301/Group_1_1.png"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://www.youngparents.com.sg/wp-content/uploads/2017/10/7-things-you-should-know-about-Baby%E2%80%99s-ear-infection_1-1-e1580355290445-640x420.jpg"
+                src="https://res.cloudinary.com/dcft8yhab/image/upload/v1596766301/Group_1_1.png"
                 alt=""
             /></a>
             <a
-              href="https://static.wixstatic.com/media/1f7e2d_dbd19c42e4e04a328569152d4d568368~mv2.jpg/v1/fill/w_640,h_420,al_c,q_80,usm_0.66_1.00_0.01/1f7e2d_dbd19c42e4e04a328569152d4d568368~mv2.webp"
+              href="https://res.cloudinary.com/dcft8yhab/image/upload/v1596766729/coder_app.png"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://static.wixstatic.com/media/1f7e2d_dbd19c42e4e04a328569152d4d568368~mv2.jpg/v1/fill/w_640,h_420,al_c,q_80,usm_0.66_1.00_0.01/1f7e2d_dbd19c42e4e04a328569152d4d568368~mv2.webp"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex-box second-img-flex">
-            <a
-              href="https://www.usnews.com/dims4/USNEWS/7d96433/2147483647/thumbnail/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2Fa7%2F47555e962369b306eebd79455324f9%2Ftag%3Areuters.com%2C2019%3Anewsml_LYNXMPEF9M128%3A12019-10-23T120355Z_1_LYNXMPEF9M128_RTROPTP_3_LEBANON-PROTESTS-YOUTH.JPG"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://www.usnews.com/dims4/USNEWS/7d96433/2147483647/thumbnail/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2Fa7%2F47555e962369b306eebd79455324f9%2Ftag%3Areuters.com%2C2019%3Anewsml_LYNXMPEF9M128%3A12019-10-23T120355Z_1_LYNXMPEF9M128_RTROPTP_3_LEBANON-PROTESTS-YOUTH.JPG"
+                src="https://res.cloudinary.com/dcft8yhab/image/upload/v1596766729/coder_app.png"
                 alt=""
             /></a>
             <a
-              href="https://behaviortherapist.com/wp-content/uploads/2019/02/flower.jpg"
+              href="https://res.cloudinary.com/dcft8yhab/image/upload/v1596767088/Tutorism_Landing_Page_1.png"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://behaviortherapist.com/wp-content/uploads/2019/02/flower.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://inews.co.uk/images-i.jpimedia.uk/imagefetch/https://inews.co.uk/wp-content/uploads/2018/06/GettyImages-967638780.jpg?width=640"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://inews.co.uk/images-i.jpimedia.uk/imagefetch/https://inews.co.uk/wp-content/uploads/2018/06/GettyImages-967638780.jpg?width=640"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex-box third-img-flex">
-            <a
-              href="https://cdn.pixabay.com/blog/preview/2018/11/03/10-31-55-410_640x420.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://cdn.pixabay.com/blog/preview/2018/11/03/10-31-55-410_640x420.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://webtekdi.com/website/buynow/templates/IBGWTCT011/IBGWTCT011TMPL002/images/4.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://webtekdi.com/website/buynow/templates/IBGWTCT011/IBGWTCT011TMPL002/images/4.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://weezbo.com/images/2012/12/1356267110_21-640x420.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://weezbo.com/images/2012/12/1356267110_21-640x420.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkEn7uHnqPMNhMTB-FFKXdHxDi8HNyRnxhHYQjTJvBqHnAwvrB&usqp=CAU"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkEn7uHnqPMNhMTB-FFKXdHxDi8HNyRnxhHYQjTJvBqHnAwvrB&usqp=CAU"
-                alt=""
-            /></a>
-          </div>
-          <div class="flex-box fourth-img-flex">
-            <a
-              href="https://www.usnews.com/dims4/USNEWS/3f1954a/2147483647/crop/4050x2658%2B0%2B0/resize/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F0e%2F3d%2Ffe9642584a5d877d4dc415947ee7%2F170914-editorial.bc.disasterlist.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://www.usnews.com/dims4/USNEWS/3f1954a/2147483647/crop/4050x2658%2B0%2B0/resize/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2F0e%2F3d%2Ffe9642584a5d877d4dc415947ee7%2F170914-editorial.bc.disasterlist.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://asiasociety.org/files/uploads/191images/170109_edwray_photo3.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://asiasociety.org/files/uploads/191images/170109_edwray_photo3.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://www.usnews.com/dims4/USNEWS/8694570/2147483647/thumbnail/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2Ff9%2Fc6%2F60e15f9b4435a507597f53c57b4d%2F190801-bclegalintro-stock.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://www.usnews.com/dims4/USNEWS/8694570/2147483647/thumbnail/640x420/quality/85/?url=https%3A%2F%2Fmedia.beam.usnews.com%2Ff9%2Fc6%2F60e15f9b4435a507597f53c57b4d%2F190801-bclegalintro-stock.jpg"
-                alt=""
-            /></a>
-            <a
-              href="https://weezbo.com/images/2012/12/1356267145_19-640x420.jpg"
-              class="flex-items works-image"
-              data-lightbox="mygallary"
-              ><img
-                class="responsive-img"
-                src="https://weezbo.com/images/2012/12/1356267145_19-640x420.jpg"
+                src="https://res.cloudinary.com/dcft8yhab/image/upload/v1596767088/Tutorism_Landing_Page_1.png"
                 alt=""
             /></a>
           </div>
           <div class="flex-box fifth-img-flex">
             <a
-              href="https://www.colorlines.com/sites/default/files/styles/article_lead_normal/public/images/articles/2018/11/gordon-parks-new-tide-1-now-110518.jpeg?itok=edVwHV1-"
+              href="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://www.colorlines.com/sites/default/files/styles/article_lead_normal/public/images/articles/2018/11/gordon-parks-new-tide-1-now-110518.jpeg?itok=edVwHV1-"
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
                 alt=""
             /></a>
             <a
-              href="https://www.nornow.org/wp-content/uploads/Kendall389BW266dpiUSM-640x420.jpg"
+              href="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://www.nornow.org/wp-content/uploads/Kendall389BW266dpiUSM-640x420.jpg"
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
                 alt=""
             /></a>
             <a
-              href="https://www.howwebiz.ug/uploads/articles/image_640/thumbnail_640_420/howwe_d0096ec6c83575373e3a21d129ff8fef_1476789904.jpg"
+              href="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://www.howwebiz.ug/uploads/articles/image_640/thumbnail_640_420/howwe_d0096ec6c83575373e3a21d129ff8fef_1476789904.jpg"
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
                 alt=""
             /></a>
             <a
-              href="https://i.pinimg.com/736x/0a/a1/e8/0aa1e8ff46c3056c61f9ed9863a83aea.jpg"
+              href="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
               class="flex-items works-image"
               data-lightbox="mygallary"
               ><img
                 class="responsive-img"
-                src="https://i.pinimg.com/736x/0a/a1/e8/0aa1e8ff46c3056c61f9ed9863a83aea.jpg"
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081"
                 alt=""
             /></a>
           </div>
@@ -350,7 +282,6 @@
       <section class="mobile-testimonials">
         <h2 class="works-heading">Testimonials</h2>
         <div class="testimonial-carousel">
-
           <div class="testimonial-card" id="mobile-testimonial-card">
             <div class="mobile-testimonial-img-box">
               <img src="images/celebrity.jpg" alt="" />
@@ -418,9 +349,7 @@
       </section>
       <!-- THIS MARKS THE END OF THE MOBILE TESTIMONIAL DISPLAY -->
 
-
-      <section class="email-subscription-section">
-        <!-- <h2 class="works-heading">Tips</h2> -->
+      <!-- <section class="email-subscription-section">
         <img src="images/email.png" class="email-subscription-image" alt="" />
         <p class="email-subscription-text">
           I give examples and tips on how to influence your brand, establish
@@ -432,20 +361,28 @@
           <input type="email" name="email" id="email" />
           <button type="submit"><i class="fas fa-paper-plane"></i></button>
         </form>
-      </section>
+      </section> -->
       <section class="profile-section">
         <div class="profile-img-container" id="contact-me-beginning">
-          <img src="images/JD pic.png" alt="" />
+          <img src="/images/Website banner.png" alt="" />
         </div>
         <div class="profile-body-container">
-          <p class="profile-text">
-            People trust people who have shown over time that they
-            are awesome at what they do. Allow me to add you to my host
-            of over satisfied clients. Let's make magic!
-          </p>
-          <button class="profile-action-btn">
-            Get in touch
-          </button>
+          <div class="profile-body-container-inner">
+            <p class="profile-text">
+              People trust people who have shown over time that they are awesome
+              at what they do. If you allow us, we will compile a list of our
+              over satisfied customers in the near future and we are so sure
+              your name will be there.
+            </p>
+            <a
+              href="https://wa.me/2347069460208?text=Hello,%20I%20arrived%20from%20your%20website,%20I%20want%20to%20build%20with%20you.%20Here's%20what%20I%20want: "
+              style="text-decoration: none;"
+            >
+              <button class="profile-action-btn">
+                Get in touch
+              </button>
+            </a>
+          </div>
         </div>
       </section>
       <!-- <section class="contact-section">
@@ -486,19 +423,23 @@
           </form>
         </div>
       </section> -->
-      <section class="">
-        <button class="contact-btns" id="whatsapp-contact-button">
-          <i class="fab fa-whatsapp"></i> Mesage me on WhatsApp
-        </button>
-        <button class="contact-btns" id="facebook-contact-button">
-          <i class="fab fa-facebook"></i> Mesage me on Facebook
-        </button>
+      <section class="contact-buttons-container" id="contact-buttons-container">
+        <p class="contact-heading">Forms Are Slow!</p>
+
+        <a
+          href="https://wa.me/2347069460208?text=Hello,%20I%20arrived%20from%20your%20website,%20here's%20why: "
+          style="text-decoration: none;"
+        >
+          <button class="contact-btns" id="whatsapp-contact-button">
+            <i class="fab fa-whatsapp"></i> Mesage me on WhatsApp
+          </button>
+        </a>
       </section>
     </article>
 
     <footer>
       <div class="footer-content">
-        <p class="logo footer-logo">Lucid Photography</p>
+        <p class="logo footer-logo">SpillCode</p>
         <ul class="footer-nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#works">Work</a></li>
@@ -516,9 +457,7 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
           </li>
         </ul>
-        <p class="copyright">
-          All rights reserved. <span>Lucid Photography</span>
-        </p>
+        <p class="copyright">All rights reserved. <span>Spillcode</span></p>
       </div>
     </footer>
 
