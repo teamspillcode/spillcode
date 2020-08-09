@@ -25,10 +25,23 @@
       async="async"
       src="https://static.mobilemonkey.com/js/2293346120746646.js"
     ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="" id="mobile-home-nav-item">Home</a></li>
+        <li><a href="#works">Work</a></li>
+        <li class="-mobile-services-nav-item">
+          <a href="#services-heading">Services</a>
+        </li>
+        <li class="mobile-contact-nav-link">
+          <a href="#contact-buttons-container">Contact</a>
+        </li>
+      </ul>
+    </div>
     <article class="container">
-      <nav>
+      <nav class="desktop-nav">
         <ul>
           <span class="logo">
             <li>Spillcode</li>
@@ -81,7 +94,7 @@
         <h2 class="services-heading" id="services-heading">Services</h2>
         <div class="services-grid">
           <div class="grid-cards grid-box-1">
-            <img src="images/focus-concept.jpg" class="cards-img" alt="" />
+            <i class="cards-icon" data-feather="check-square"></i>
             <h4 class="card-heading">Web Development</h4>
             <div class="card-body">
               <p class="card-body-text">
@@ -96,7 +109,7 @@
             </div>
           </div>
           <div class="grid-cards grid-box-2">
-            <img src="images/focus-concept.jpg" class="cards-img" alt="" />
+            <i class="cards-icon" data-feather="check-square"></i>
             <h4 class="card-heading">Mobile Development</h4>
             <div class="card-body">
               <p class="card-body-text">
@@ -111,7 +124,7 @@
             </div>
           </div>
           <div class="grid-cards grid-box-3">
-            <img src="images/focus-concept.jpg" class="cards-img" alt="" />
+            <i class="cards-icon" data-feather="check-square"></i>
             <h4 class="card-heading">UI/UX Designs</h4>
             <div class="card-body">
               <p class="card-body-text">
@@ -462,6 +475,9 @@
       </div>
     </footer>
 
+    <script>
+      feather.replace();
+    </script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"

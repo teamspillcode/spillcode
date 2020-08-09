@@ -15,6 +15,9 @@ body {
   overflow-x: hidden;
 }
 
+.mobile-nav {
+  display: none;
+}
 nav {
   position: absolute;
   width: 100vw;
@@ -559,20 +562,71 @@ footer {
   color: var(--main-blue);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   body {
     background-color: black;
+    margin-top: 1%;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    margin-top: -3.8%;
+    padding-top: 1%;
+  }
+  .mobile-nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    margin-left: -10%;
+  }
+  .mobile-nav ul li {
+    margin-left: 5%;
+  }
+  .mobile-nav ul li a {
+    text-decoration: none;
+    color: var(--main-white);
   }
   .contact-nav-link a {
     color: var(--main-white);
   }
+  .mobile-contact-nav-link {
+    background-color: #d65600;
+    padding: 9px;
+  }
+  .grid-item-2 {
+    margin-top: 10%;
+  }
+  .grid-item-2-img {
+    width: 280px !important;
+    height: 100px;
+  }
+  .services-heading {
+    margin-bottom: 40px;
+  }
   .grid-box {
-    margin-top: 12%;
+    margin-top: -10%;
     display: block;
   }
-  .grid-item-2 img {
-    margin-top: 10%;
-    width: 100%;
+  .grid-cards {
+    width: 300px;
+    height: 355px;
+    margin-bottom: 8%;
+    font-size: 22px;
+  }
+  .grid-cards .cards-icon {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+    font-size: 800px !important;
+  }
+
+  .grid-item-1-inner-box h1 {
+    font-size: 40px;
+  }
+  .grid-item-1-inner-box p {
+    font-size: 14px;
   }
   .contact-nav-link {
     position: absolute;
@@ -589,6 +643,9 @@ footer {
   .services-nav-item {
     background-color: rgb(192, 45, 0);
     padding: 20px;
+    display: block;
+    width: 70px;
+    margin-top: 2%;
   }
   .first-img-flex {
     margin-top: 15%;
@@ -611,7 +668,7 @@ footer {
     width: 100%;
   }
   .rest-of-body {
-    margin-top: 80%;
+    margin-top: 75%;
   }
   #projects-section {
     display: block !important;
@@ -708,5 +765,26 @@ footer {
   }
   .footer-social-icons {
     margin-left: -22%;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 450px) {
+  .mobile-nav {
+    display: block;
+    margin-top: -3.8%;
+    padding-top: 1%;
+  }
+  .mobile-nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    margin-left: -6%;
+  }
+  .mobile-nav ul li {
+    margin-left: 5%;
+  }
+  .mobile-contact-nav-link {
+    background-color: var(--main-blue);
+    padding: 15px;
   }
 }
